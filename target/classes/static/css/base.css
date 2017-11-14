@@ -1,0 +1,66 @@
+html,body,iframe,div,ul,ol,span,i,em,p,li,dl,dt,dd,input,textarea,form,label,img,table,tr,td{
+	margin:0;
+	padding: 0;
+	outline: none;
+}
+body{
+	font-family: "Microsoft YaHei",微软雅黑;
+	font-size: 12px;
+	color: #333;
+	-webkit-text-size-adjust:100%;
+}
+/* 重设 HTML5 标签*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul,li{list-style: none;cursor: pointer;}
+img,input{border: none;}
+em,i{font-style: normal;}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.clearfix:after{zoom:1;}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.top26{
+	margin-top: 26px;
+}
+.m1024{
+	min-width: 1024px;
+}
+.bgf4{
+	background: #f4f4f4;
+}
+/*.3399ff{
+	background: #3399ff;
+}*/
+/*datagrid*/
+.datagrid-header-over {
+	background-color: transparent !important;
+	color: #666666 !important;
+}
+
+.datagrid-btn-separator {
+	border-left: 1px solid #fafafa;
+	border-right: 1px solid #999999;
+}
+
+#tnewsIframe {
+	border: none !important;
+}

@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+/*输入框样式*/
+.dialog_input_title01 {
+	float: left;
+}
+
+.dialog_input_left {
+	float: left;
+}
+
+.dialog_inputs {
+	width: 95%;
+}
+
+.show_inputs {
+	padding-left: 2.5%;
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.dialog_input_title {
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.dialog_inputs {
+	outline: none;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #CCCCCC;
+	background: none;
+	text-indent: 10px;
+	transition: all 1s ease;
+}
+/*获取焦点边框变色*/
+.inputs01:focus {
+	border: 1px solid deepskyblue;
+}
+
+.inputs02:focus {
+	border: 1px solid green;
+	cursor: not-allowed;
+}
+/*获取焦点有阴影效果*/
+.inputs01_shadow:focus {
+	box-shadow: 0 0 10px red;
+	border: 1px solid red;
+}
+
+.inputs02_shadow:focus {
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+/*含有圆角的*/
+.inputs01_shadow_radius:focus {
+	border-radius: 5px;
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+
+.inputs02_shadow_radius:focus {
+	border-radius: 20px;
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+/*search*/
+.inputs_search {
+	border-radius: 20px;
+	border: 1px solid #CCCCCC;
+}
+
+.inputs_search:focus {
+	border-radius: 0;
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+/*dialog textarea*/
+.dialog_textarea01 {
+	height: 100px;
+	resize: auto;
+}
+
+.dialog_textarea01:focus {
+	height: 100px;
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+/*不可编辑的textarea*/
+.dialog_textarea02 {
+	height: 100px;
+	cursor: not-allowed;
+}
+/*select*/
+.dialog_selects01:focus {
+	border: 1px solid deepskyblue;
+	box-shadow: 0 0 10px deepskyblue;
+}
+
+.dialog_selects02:focus {
+	border: 1px solid deepskyblue;
+}
+
+/*addon风格*/
+.dialog_addon_title {
+	float: left;
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid transparent;
+	background: #f60;
+	color: white;
+	border-radius: 5px 0 0 5px;
+	text-align: center;
+}
+
+.dialog_addon {
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	width: 83%;
+}
+
+.addon_inputs {
+	border: 1px solid #CCCCCC;
+	height: 36px;
+	line-height: 36px;
+	width: 100%;
+}
+
+.dialog_addon_inputs {
+	height: 36px;
+	margin-bottom: 20px;
+}
+
+.dialog_addon_title:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.dialog_addon_end {
+	float: left;
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid transparent;
+	background: skyblue;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dialog_addon_end:hover {
+	opacity: 0.9;
+}
+
+.icons_inputs {
+	font-size: 25px;
+	line-height: 36px;
+}
+
+.end_search {
+	font-size: 25px;
+	line-height: 36px;
+}
+
+.icon-search {
+	background: none;
+}
+/*左右都有addon的风格*/
+.dialog_addon_header {
+	float: left;
+	width: 50px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	border-right: none;
+	color: #666666;
+}
+
+.dialog_addon_tail {
+	float: left;
+	width: 50px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+	color: #666666;
+}
+
+.addon_inputs_center {
+	width: 100%;
+}
+
+.dialog_addon_center {
+	float: left;
+	width: 80%;
+}
+/*按钮的封装*/
+/*常用颜色的封装*/
+.color_green {
+	border-color: green !important;
+	color: green !important;
+}
+
+.color_red {
+	border-color: red !important;
+	color: red !important;
+}
+
+.dialog_btns {
+	text-align: center;
+}
+
+.dialog_btn_primary {
+	width: 100px;
+	height: 35px;
+	line-height: 34px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background: #3C8DBC;
+	outline: none;
+}
+
+.dialog_btn_primary:hover {
+	opacity: 0.8;
+}
+
+.outline_btn {
+	background: none;
+	border-color: #3C8DBC;
+	color: #3C8DBC;
+}
+
+.radius_btn {
+	border-radius: 20px;
+}
+
+.block_btn {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*时间日期*/
+.textbox-invalid {
+	border-color: #ccc;
+	background-color: #FFFFFF;
+}
+
+.validatebox-invalid {
+	background-color: #FFFFFF;
+}
+
+.textbox .textbox-prompt {
+	background: none;
+}
+
+.combo-p {
+	box-shadow: 0 0 5px skyblue;
+	transition: box-shadow 1s ease;
+}
+
+.combo-p .panel-body {
+	background: white;
+	cursor: pointer;
+}
+
+.combo-p:hover {
+	box-shadow: 0 0 5px black;
+}
+/*日历控件*/
+.calendar {
+	border-color: #d2d6dc;
+	box-shadow: 0 0 10px gainsboro;
+}
+
+/*文件上传*/
+.easyui-filebox .l-btn {
+	color: #fff;
+	background: #fafafa;
+	background-repeat: repeat-x;
+	border: 1px solid #95b8e7;
+	background: -webkit-linear-gradient(top, #3c8dbc 0, #3c8dbc 100%);
+	background: -moz-linear-gradient(top, #3c8dbc 0, #3c8dbc 100%);
+	background: -o-linear-gradient(top, #3c8dbc 0, #3c8dbc 100%);
+	background: linear-gradient(to bottom, #3c8dbc 0, #3c8dbc 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3c8dbc,
+		endColorstr=#3c8dbc, GradientType=0 );
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+/*switch按鈕*/
+.switchbutton-on {
+	background: #00c0ef;
+	color: white;
+}
+
+.switchbutton {
+	border-radius: 20px;
+	box-shadow: 0 0 5px #EEEEEE;
+	border: 1px solid #CCCCCC;
+	transition: all 1s ease;
+}
+
+.switchbutton:hover {
+	box-shadow: 0 0 5px skyblue;
+}
+
+.switchbutton-handle {
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+/*rang*/
+.easyui-progressbar {
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #CCCCCC;
+}
+
+.progressbar-value .progressbar-text {
+	background-color: #b4ded6;
+	color: #000000;
+}
+
+/*常用按钮样式button*/
+.components_title {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.components {
+	text-align: center;
+	margin: 10px;
+}
+
+.compontent_btn {
+	border: 1px solid #CCCCCC;
+	background: transparent;
+	border-radius: 3px;
+	padding: 2px 3px;
+	outline: none;
+}
+
+.compontent_btn:hover {
+	opacity: 0.8;
+}
+
+.btn_blue {
+	background: #0092DC;
+	color: white;
+	border: 1px solid #0092DC;
+}
+
+.btn_green {
+	background: #03c13e;
+	color: white;
+	border: 1px solid #03c13e;
+}
+
+.btn_gray {
+	background: #CCCCCC;
+	color: white;
+	border: 1px solid #CCCCCC;
+}
+
+.btn_orange {
+	background: #FF6600;
+	color: white;
+	border: 1px solid #FF6600;
+}
+
+.btn_com {
+	padding: 5px 8px;
+}
+
+.btn_lg {
+	padding: 10px 15px;
+}
+
+.btn_outline {
+	background: transparent;
+	color: #666;
+}
+
+.icons {
+	padding: 0 2px;
+}
+
+.mar_pad {
+	padding: 5px;
+}
+
+/*按钮组 start*/
+.bootstrap_del_btn {
+	text-align: center;
+	display: inline-block;
+	color: #ffffff;
+	padding: 2px 5px;
+	border-radius: 3px;
+	background: #f9893e;
+	border: none;
+	margin: 0 3px;
+	outline: none;
+	text-decoration: none;
+}
+
+.bootstrap_up_btn {
+	text-align: center;
+	display: inline-block;
+	color: white;
+	padding: 2px 5px;
+	background: #66bfda;
+	border: none;
+	border-radius: 3px;
+	margin: 0 3px;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+/*按钮组 end*/
+
+/*输入框组件 start*/
+.inputs_list_line {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+
+.inputs_left_name {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.inputs_right_assembly {
+	display: inline-block;
+	width: 75%;
+	padding-right: 10px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.assembly_style {
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	text-indent: 15px;
+	border: 1px solid #CCCCCC;
+}
+
+.assembly_style:focus {
+	border: 1px solid #0092DC;
+}
+/*输入框组件 end*/
+/*表格样式  */
+.tonduty_area {
+	resize: none;
+	width: 100%;
+	height: 80px;
+	/*border: none;*/
+	outline: none;
+	border: none;
+}
+
+.bootstrap_update_btn {
+	padding: 3px 10px;
+	color: white;
+	background: #66bfda;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	z-index: 999;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	transition: all 1s ease;
+}
+
+.bootstrap_update_btn:hover {
+	text-decoration: none;
+	box-shadow: 2px 2px 5px #66bfda;
+	color: white;
+}
+
+.td_tonduty {
+	position: relative;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.tonduty_area-body::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background-color: #f1f1f1;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.tonduty_area::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+/*定义滑块 内阴影+圆角*/
+.tonduty_area::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #f1f1f1;
+}
+
+.tonduty_table {
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	margin:0 auto;
+	width: 715px;
+	margin-left: 195px;
+	transition:all 1s ease;
+}
+.tonduty_table:hover {
+	box-shadow:2px 2px 20px #74baff;
+	border: 1px solid #eef6ff;
+}
+
+.tonduty_table tr td,.tonduty_table th {
+	border: 1px solid #CCCCCC;
+	text-align: center;
+}
+.tonduty_table tr:nth-child(odd) {
+	background: #eef6ff;
+}
+.th_header{
+	padding:5px 0;
+	color:#666;
+}
+.search_inputs_list{
+	position: absolute;
+    top: 5px;
+    left: 190px;
+    z-index: 999;
+}
+.search_input{
+	height: 25px;
+	line-height: 25px;
+	border:1px solid #cccccc;
+	outline: none;
+	transition:all 1s ease;
+	width: 150px;
+	text-indent: 10px;
+}
+.search_input:hover{
+	border:1px solid #00c0fa;
+	box-shadow:0 0 5px #00c0fa;
+}
+.size_style{
+	font-size: 14px;
+}
+.size_style:hover{
+	transition:all 1s ease;
+	box-shadow:2px 2px 5px #ccc;
+}
+.search_inputs_name{
+	font-size: 14px
+	
+}

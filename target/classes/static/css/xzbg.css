@@ -1,0 +1,367 @@
+.span-inp>span{
+	margin-right: 6px;
+}
+.span-inp>.input-append>input{
+    width: 120px;
+	height: 36px;
+}
+.span-inp>.input-append>select{
+	width: 160px;
+	height: 36px;
+}
+.span-inp>.input-append>select>option{
+	height: 42px;
+	line-height: 42px;
+}
+.span-inp>.input-append>span{
+	display: inline-block;
+	padding: 3px 6px;
+}
+.span-inp>.input-append>i{
+	height: 26px;
+	width: 32px;
+}
+.span-inp>.input-append>i>img{
+}
+.btn-inp{
+	background: #2cbfdc;
+}
+.btn-inp:hover,.btn-inp:focus{
+	background: #2cbfdc;
+}
+.input-jilu{
+	float: right;
+    padding: 8px;
+	border: 1px dashed #d3d3d3;
+}
+.input-jilu>img{
+	margin-bottom: 3px;
+}
+/* 请销假管理 */
+.span-svg{
+	padding: 28px;
+}
+.span-svg>input{
+	margin-right: 16px;
+}
+/* 请销假管理结束 */
+/*会议室管理-会议室设置 开始*/
+/*会议室列表 开始*/
+.tab-height{
+	height:auto;
+	overflow:none;
+}
+.conferenceList{
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 96%;
+	min-height: 200px;
+}
+.mr5{
+	margin-right: 5px;
+}
+.seeList{
+	background: url(../images/icon99.jpg) no-repeat;
+	width: 22px;
+	height: 14px;
+	display:inline-block;
+	margin-left: 5px;
+	position: relative;
+	cursor: pointer;
+}
+.seeList:hover{
+	background: url(../images/icon101.jpg) no-repeat;
+}
+.equipmentConent{
+	position: absolute;
+	top: 10px;
+	right: -15px;
+	z-index: 9999;
+	width: 381px;
+	height: 195px;
+	padding: 15px 10px 20px 10px;
+	background: url(../images/bg1.png) no-repeat;
+	display: none;
+}
+.equipmentConentTitle{
+	color: #fff;
+	font-size: 14px;
+	width:94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 6px;
+	border-bottom: 1px #b0e0ea solid;
+	text-align: left;
+}
+.equipment{
+	padding:12px 14px; 
+	height: 130px;
+	background: #fff;
+	color: #616161;
+	text-align: left;
+}
+.seeList:hover .equipmentConent{
+	display: block;
+}
+
+/*会议室列表 结束*/
+#meetBtn{
+	margin-left: 180px;
+}
+#meetBtn>button{
+	margin-right: 10px;
+}
+.meetRole{
+	position: relative;
+}
+.meetTree{
+	position: absolute;
+	top: 5px;
+	left: 230px;
+	cursor: pointer;
+
+}
+/*会议室管理-会议室设置 结束*/
+
+
+/*会议室申请 开始*/
+.meetRole{
+	position: relative;
+}
+.meetRole>em{
+	display: inline-block;
+	padding: 5px 8px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.meetRole:hover>em{
+	background: #61c1d4;
+	color: #fff;
+	cursor: pointer;
+}
+.equipmentRole{
+	position: absolute;
+	top: 30px;
+	right: 12px;
+	z-index: 9999;
+	width: 381px;
+	height: 195px;
+	padding: 15px 10px 20px 10px;
+	background: url(../images/bg1.png) no-repeat;
+	display: none;
+}
+.meet-role{
+	padding:12px 14px; 
+	height: 130px;
+	background: #fff;
+	color: #616161;
+	text-align: left;
+	overflow-y: auto;
+	display: block;
+}
+.meetRole:hover .equipmentRole{
+	display: block;
+	cursor: pointer;
+}
+.meet-role>table{
+	max-width: 320px;
+	width: 320px;
+	margin:0 auto;
+	overflow-x: auto;
+}
+.meet-role>table tr td{
+	border:1px #cce9ef solid;
+	text-align: center;
+}
+.timeIcon{
+	background: url(../images/timeIcon.jpg) 195px no-repeat;
+	cursor: pointer;
+}
+.meet2{
+	width: 300px;
+	min-width: 300px;
+	padding: 8px;
+}
+/*会议室申请 结束*/
+
+
+/*会议室管理员弹出框 开始*/
+.popup1{
+	border:7px #7c7c7c solid;
+	min-width: 780px;
+}
+.modal-header{
+	background: #59b6f3;
+	color: #fff;
+}
+.modal-header>h3{
+	font-size: 16px;
+}
+
+.roleChoice{
+	padding-top: 0;
+}
+
+.roleLeft{
+	width: 50%;
+	border-right: 1px #e4e4e4 solid;
+	height: 500px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.group-head{
+	background: url(../images/icon22.jpg) left center no-repeat;
+	color: #656565;
+	font-size: 16px;
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	border-bottom: 1px #dbdbdb solid;
+	padding-left: 6%;
+	width: 94%;
+}
+.treeTwo1{
+	height: 200px;
+	max-height: 200px;
+	overflow-y: auto;
+	padding-left: 10%;
+}
+.treeTwo1>li{
+	height: 30px;
+	line-height: 30px;
+	color: #7a7a7a;
+	font-size: 14px;
+}
+.treeTwo1>li>label{
+	border: 1px solid #d9d9d9;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	border-radius: 2px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+}
+
+.treeTwo1>li>label.select{
+	background:url(../images/duihao.png) no-repeat;
+	background-size:12px 12px;
+	background-position: center; 
+}
+.treeTwo1>li>input{
+	display: none;
+}
+
+.roleRight{
+	width: 48%;
+	margin-left: 1%;
+	
+}
+.roleRight>h4{
+	height: 42px;
+    line-height: 42px;
+    border-bottom: 1px #dbdbdb solid;
+    background: url(../images/icon55.jpg) 14px center no-repeat;
+    font-size: 16px;
+    padding-left: 12%;
+    width: 88%;
+    margin:0;
+    margin-bottom: 10px;
+}
+.roleRight>h4>em{
+	color: #7a7a7a;
+}
+.red{
+	color: #ff0000;
+}
+.roleRight>ul>li{
+	padding-left: 8%;
+	padding-right: 8%;
+	width: 84%;
+	height: 30px;
+	line-height: 30px;
+	color: #7a7a7a;
+    font-size: 14px;
+}
+.roleRight>ul>li>img{
+	margin-top:8px;
+}
+/* 我的报修 */
+.table-title{
+	text-align: left;
+    border-top: 4px solid #3399ff;
+    border-left: 1px solid #bad4ef;
+    border-right: 1px solid #bad4ef;
+    padding: 16px 16px;
+    background: #e9f2fc;
+}
+.table-title span{
+	padding: 3px 6px;
+    border-left: 4px solid #3399fe;
+    color: #3399fe;
+    font-size: 1.2em;
+}
+.table-tip{
+	text-align: center;
+	border-top: 1px solid #bad4ef;
+    border-left: 1px solid #bad4ef;
+    border-right: 1px solid #bad4ef;
+    padding: 8px;
+    font-weight: bold;
+    background: #e9f2fc;
+}
+.table-tip span{
+    color: #2e6e9e;
+    text-align: center;
+}
+.table-contain{
+	width: 99.9%;
+	overflow-x: scroll;
+	border-left: 1px solid #bad4ef;
+	border-right: 1px solid #bad4ef;
+}
+.tableSchedule{
+	width: 2000px;
+}
+.tableSchedule tr td{
+	cursor: pointer;
+}
+.span-title1 {
+    margin-bottom: 0px;
+}
+.form-horizontal{
+	margin-top: 21px;
+}
+.btn{
+	border:none;
+	text-shadow: none;
+	color: #fff;
+}
+.btn1{
+	background: #f1403f;
+}
+.btn2{
+	background: #717171;
+}
+.btn3{
+	background: #28a3f3;
+}
+
+.color11{
+	background: #3ebcd5;
+}
+.color11:hover{
+	background:#3ebcd5;
+	color: #fff;
+}
+
+
+/*销假*/
+#leave input{
+	padding: 0;
+}
+
+/*销假*/

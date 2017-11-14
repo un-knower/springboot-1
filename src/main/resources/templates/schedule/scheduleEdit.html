@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/plugins/bootstrap-fileinput/css/fileinput.min.css"/>
+<link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/black/easyui.css"/>
+<link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/default/menu.css"/>
+<link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/icon.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+<link rel="stylesheet" type="text/css" href="/css/easyUI-extend.css"/>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap-Imitation.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/css/headimage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/tankuang.css"/>
+<!-- ueditor -->
+<link rel="stylesheet" type="text/css" href="/plugins/ueditor/themes/default/css/ueditor.css"/>
+<script type="text/javascript" charset="utf-8" src="/plugins/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/plugins/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript" src="/plugins/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/plugins/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/plugins/easyui/plugins/jquery.messager.js"></script>
+<script type="text/javascript" src="/plugins/easyui/plugins/locale/easyui-lang-zh_CN.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
+<script type="text/javascript"  src="/plugins/scripts/validator.js"></script>
+<script type="text/javascript" src="/Js/schedule/scheduleEdit.js"></script>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+    <body class="teacher_add_body" style="overflow-y: auto;">
+
+    <form id="form" method="post" style="margin-top:25px;margin-left:5px;">
+        <input type="hidden" id="id" name="id" th:value="${schedule.id}"/>
+        <div class="inputs_list_line">
+            <span class="inputs_left_name">学校：</span>
+            <span class="inputs_right_assembly">
+		    	<input type="text" id="schoolName" name="schoolName" th:value="${schoolName}" class="assembly_style"  readonly="true"/>
+		    </span>
+        </div>
+
+        <div class="inputs_list_line" id="classGrade">
+            <span class="inputs_left_name">班级：</span>
+            <span class="inputs_right_assembly">
+			    	 <select id="classId" name="classId"  class="assembly_style" >
+                     </select>
+			    </span>
+        </div>
+        <input type="hidden" id="classHidden" name="classHidden" th:value="${schedule.classId}"/>
+        <div class="inputs_list_line" id ="validBeginTemp">
+            <span class="inputs_left_name">有效期开始时间：</span>
+            <span class="inputs_right_assembly">
+		    	<input type="text" placeholder="请输入有效期开始时间" id="validBegin" name="startDate" class="easyui-datebox"
+                       th:value="${schedule.startDate}"  isvalid="yes" errormsg="有效期开始时间" checkexpession="DateOrNull"/>
+		    </span>
+        </div>
+        <div class="inputs_list_line">
+            <span class="inputs_left_name">有效期结束时间：</span>
+            <span class="inputs_right_assembly">
+		    	<input type="text" placeholder="请输入有效期结束时间" id="validEnd" name="endDate"  class="easyui-datebox"
+                       th:value="${schedule.endDate}"   isvalid="yes" errormsg="有效期结束时间" checkexpession="DateOrNull"/>
+		    </span>
+        </div>
+        <div class="inputs_list_line">
+            <span class="inputs_left_name">已传附件：</span>
+            <input type="input" id="classHidden" name="classHidden" th:value="${schedule.fileName}" readonly="true"/>
+        </div>
+        <input type="hidden" id="hiddenUrl" name="hiddenUrl" th:value="${schedule.fileUrl}"/>
+        <div class="inputs_list_line" style="display:'block'"  >
+            <span class="inputs_left_name">附件：</span>
+            <span class="inputs_right_assembly">
+		    	<input type="file" id="attachment" name="file" multiple="multiple"/>
+				<input type="hidden" id="fileUrl" name="fileUrl"/>
+		    </span>
+        </div>
+        </form>
+    </body>
+  </html>

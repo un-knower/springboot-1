@@ -1,0 +1,118 @@
+﻿.dialog-button {
+	text-align: center;
+	background: #f9f9f9;
+}
+
+.datagrid-btable tbody tr:nth-child() {
+	height: 51px;
+}
+
+.window {
+	overflow: hidden;
+	padding: 0px;
+	border-width: medium;
+	border: 8px solid #b9dcff;
+}
+
+.panel-header:nth-child(1) {
+	background-color: #b9dcff;
+	background: -webkit-linear-gradient(top, #b9dcff 0, #b9dcff 100%);
+	background: -moz-linear-gradient(top, #b9dcff 0, #b9dcff 100%);
+	background: -o-linear-gradient(top, #b9dcff 0, #b9dcff 100%);
+	background: linear-gradient(to bottom, #b9dcff 0, #b9dcff 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b9dcff,
+		endColorstr=#b9dcff, GradientType=0 );
+}
+
+.window .window-body {
+	border-color: #b9dcff;
+}
+
+.dialog-button {
+	top: 0px;
+	border-color: transparent;
+	border-bottom: transparent;
+}
+
+.dialog-button .l-btn {
+	background: #83c1ff;
+	color: #ffffff !important;
+	border: 1px solid transparent;
+	box-shadow: 1px 1px 0px grey;
+	transition:all 1s ease;
+}
+
+/* .dialog-button .l-btn:nth-child(2) {
+	background: #f60;
+} */
+
+.dialog-button .l-btn:hover {
+	color: #fff;
+	filter: none;
+	box-shadow: 2px 2px 8px #83c1ff;
+}
+
+.pagination .l-btn-icon-left .l-btn-icon {
+	left: 14px;
+}
+
+.dialog-button .l-btn .l-btn-text {
+	color: white;
+}
+
+.pagination-btn-separator {
+	float: left;
+	height: 24px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #777;
+	margin: 3px 1px;
+}
+
+.panel-body {
+	overflow: auto;
+	padding: 4px;
+}
+
+.l-btn-plain:hover {
+	background: #fff !important;
+	color: #fff;
+	border: 1px solid #d4d4d4 !important;
+}
+
+.datagrid-view2 {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	overflow-x: auto;
+}
+
+.assembly_style {
+	width: 100%;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.datagrid-body::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+	background-color: #f1f1f1;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.datagrid-body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+
+/*定义滑块 内阴影+圆角*/
+.datagrid-body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #f1f1f1;
+}
+
+
+
+
+
+

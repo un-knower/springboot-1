@@ -1,0 +1,13 @@
+.row-fluid [class*="span"] {
+    margin-left: 21px;
+}
+.container-fluid{
+	padding: 0;
+}
+.row-fluid .span12 {
+    width: 100%;
+    margin-left: 0px;
+}
+.nav-pills > li > a {
+    margin-top: 0px;
+}

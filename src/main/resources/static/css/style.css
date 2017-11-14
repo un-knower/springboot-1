@@ -1,0 +1,44 @@
+/*项目全局css*/
+#info_content .panel-header:nth-child(1) {
+    background-color: #FFFFFF;
+    background: -webkit-linear-gradient(top,#FFFFFF 0,#FFFFFF 100%);
+    background: -moz-linear-gradient(top,#FFFFFF 0,#FFFFFF 100%);
+    background: -o-linear-gradient(top,#FFFFFF 0,#FFFFFF 100%);
+    background: linear-gradient(to bottom,#FFFFFF 0,#FFFFFF 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF,GradientType=0);
+}
+.panel-tool a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: transparent;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+.panel-title {
+    /* text-align: center; */
+    color: #ffffff;
+    line-height: 23px;
+}
+.teacher_add_body{
+	padding: 20px 0;
+}
+.student {
+    margin: 0 0 0 30px;
+    width: 100px !important;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor:pointer;
+    line-height: 28px;
+    height: 28px;
+}
+.students .student input[type=checkbox] {
+    position: relative;
+    top: 2px;
+}
+.student:hover {
+    border: 1px solid #83c1ff;
+  	box-shadow:0 0 5px #83c1ff;
+}

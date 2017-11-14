@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.nav-tow>li>a:hover {
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 0;
+    display: inline-block;
+    background: #777;
+}
+
+
+.nav-tow>li>a.select:hover{
+	background: #777;
+}

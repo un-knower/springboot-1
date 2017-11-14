@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/black/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/black/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="/plugins/easyui/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/easyUI-extend.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-Imitation.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/change.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/grade.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/changeeasyui.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/tankuang.css"/>
+
+
+    <script type="text/javascript" src="/plugins/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.tabs.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.parser.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.panel.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.messager.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/jquery.tree.js"></script>
+    <script type="text/javascript" src="/plugins/easyui/plugins/locale/easyui-lang-zh_CN.js"></script>
+
+    <title>Title</title>
+</head>
+
+<body>
+<div class="search_inputs_list">
+    <span class="search_inputs_name">搜索：</span>
+    <select class="search_input" id = "indexCode">
+        <option value="">请选择</option>
+       <!-- <option value="time">时间</option>
+        <option value="type">类型</option>-->
+        <option value="name">食物名</option>
+    </select>
+    <input type="search" class="search_input" placeholder="请输入搜索关键字"  id ="indexName" />
+    <a onclick="" class="bootstrap_up_btn size_style">查询</a>
+</div>
+<input type="hidden"  id="opCode" name="opCode" value="" />
+<div class="easyui-layout" data-options="fit:true" id="inner_accordon">
+    <div data-options="region:'center'">
+        <div id="data_dialog"></div>
+        <table id="data_dg"></table>
+    </div>
+</div>
+<script src="/Js/recipe/recipe.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

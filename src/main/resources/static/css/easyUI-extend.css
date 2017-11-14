@@ -1,0 +1,660 @@
+
+
+
+
+@charset "utf-8";
+/*隐藏手风琴的滚动条*/
+.nav_title{
+	width: 201px !important;
+	overflow-x:hidden ;
+}
+div.panel-header.accordion-header{
+	width: 167px !important;
+}
+div.divpanel-header.accordion-header.accordion-header-selected{
+	width: 169px !important;
+}
+/*去除header底下的间距*/
+body{
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.logo_img{
+	height: 60px;
+	margin-top: 9px;
+	width: 100%;
+}
+.layout-split-north {
+    border-bottom: 5px solid #3c8dbc;
+}
+.layout-split-south {
+     border-top: 0px solid #E6EEF8; 
+}
+/*去除中间主体外层边距样式*/
+div.panel-noscroll.panel-body.panel-body-noheader.layout-body{
+	padding: 0px !important;
+    background: rgb(255, 255, 255) !important;
+}
+
+/*设置主题风格样式*/
+.setting_sys_icon{
+	color: white;
+    position: absolute;
+    top: 24px;
+    right: -5%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 99999;
+}
+.setting_sys_icon:hover{
+	color: white;
+   	opacity: 0.8;
+}
+.settings_mystyle{
+	width: 230px;
+	height: 100%;
+	background:#41608f ;
+	position: fixed;
+	top: 80px;
+	right: -230px;
+	z-index: 9999;
+	/*border-radius: 5px 0 0 5px;*/
+	box-shadow: 0 0 10px gray;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+}
+.settings_mystyle:hover{
+	box-shadow: 0 0 10px skyblue;
+}
+.setting_title{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 89px;
+	box-sizing: border-box;
+	color: white;
+	background: rgba(255,255,255,0.1);
+}
+.icon-cog:hover{
+	transform: rotate(360deg);
+}
+.icon-cog{
+	transition: all 3s ease;
+}
+/*关闭箭头*/
+.close_icon{
+	color: #b3bfd2;
+	font-size: 20px;
+	cursor: pointer;
+	float: right;
+	margin-right: 6px;
+}
+.close_icon:hover{
+	color: #ffffff;
+}
+/*tabs切换*/
+/*tab pill的样式*/
+.tabs li {
+    margin: 8px 8px -1px 7px;
+}
+.tabs-pill {
+	padding-bottom: 20px;
+}
+#tt .tabs li a{
+	width: 50px;
+}
+#tt .tabs li {
+    margin: 0px 5px -1px 0;
+}
+#tt .tabs-pill {
+	padding-bottom: 3px;
+}
+/*tab的边框色设置*/
+.tabs-header, .tabs-scroller-left, .tabs-scroller-right, .tabs-tool, .tabs, .tabs-panels, .tabs li a.tabs-inner, .tabs li.tabs-selected a.tabs-inner, .tabs-header-bottom .tabs li.tabs-selected a.tabs-inner, .tabs-header-left .tabs li.tabs-selected a.tabs-inner, .tabs-header-right .tabs li.tabs-selected a.tabs-inner {
+    border-color: none !important;
+}
+#tt .tabs-header .tabs-scroller-left, .tabs-scroller-right, .tabs-tool, .tabs, .tabs-panels, .tabs li a.tabs-inner, .tabs li.tabs-selected a.tabs-inner, .tabs-header-bottom .tabs li.tabs-selected a.tabs-inner, .tabs-header-left .tabs li.tabs-selected a.tabs-inner, .tabs-header-right .tabs li.tabs-selected a.tabs-inner
+{
+	border-color: none;
+	padding-top: 0px;
+}
+#tt .tabs-header{
+	padding-top: 0px !important;
+}
+#tt a.tabs-inner{
+	border: none;
+	border-color: transparent;
+}
+#tt .tabs-wrap {
+    background-color: #ffffff;
+    border: none;
+}
+#tt .theme_style{
+	list-style: none;
+	height: 30px;
+	line-height: 30px;	
+	background: ;
+	width: 100%;
+	color: white;
+	cursor: pointer;
+}
+#tt .theme_style:hover{
+	color: skyblue;
+}
+
+/*主体背景与颜色设置*/
+
+.panel-body {
+	background-color: transparent;
+    color: #000000;
+    font-size: 12px;
+    font-family: "微软雅黑";
+ /*   background: url(../img/bg05.jpg) no-repeat;*/
+}
+#tabs{
+	   /*  background: url(../img/main-bg.jpg) no-repeat;*/
+  		 /*border-radius: 3px 0 0 3px;*/
+  		 transition: box-shadow 1s ease;
+  		 box-shadow: 0 0 10px gray;
+}
+#tabs:hover{
+  		 box-shadow: 0 0 10px dodgerblue;
+}
+.tabs-wrap {
+    background-color: #eaf2ff;
+}
+/*头部header*/
+
+.com_header {
+	background-color: #3c8dbc ;
+	height: 80px;
+}
+
+.logo_txt {
+	position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    /* top: 26px; */
+     left: 50%; 
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    height: 75px;
+    width: 180px;
+    line-height: 75px;
+    background: #5f9bbd;
+    display: inline-block;
+    text-align: center;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+}
+.logo_icon{
+	position: absolute;
+	left: 190px;
+	top: -30%;
+}
+
+#icons_info {
+	position: absolute;
+	top: -50%;
+	right: 66px;
+}
+
+#icons_info ul li {
+	list-style: none !important;
+	float: left !important;
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+}
+#icons_info ul li:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#icons_info ul li a {
+	color: white !important;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.user_icon {
+	width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 47px;
+    top: 28px;
+}
+
+.user_info {
+	position: relative;
+	width: 120px;
+}
+
+
+.user_name_info {
+	width: 100%;
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	top: 3px;
+	left: 33px;
+}
+
+.num_show {
+	padding: 0px 3px;
+	background: green;
+	color: white;
+	border-radius: 4px;
+	font-size: 9px !important;
+	position: absolute;
+	top: -7px;
+	left: 10px;
+	font-family: "微软雅黑";
+}
+
+.num02 {
+	background: #f39c12;
+}
+
+.num03 {
+	background: #dd4b39;
+}
+
+.welcome_txt {
+	position: absolute;
+	right: 77px;
+	top: 30px;
+	color: white;
+	font-size: 14px;
+	opacity: 0;
+}
+
+.out_system {
+	text-decoration: none;
+	color: white;
+}
+
+.out_system:hover {
+	color: pink;
+	font-weight: bold;
+}
+
+
+/*左侧data-grid-tree layout-panel-west*/
+
+/*去除easyUI自带边框线*/
+
+.panel-header,
+.panel-body {
+	border-width: 0;
+	border-style: none;
+}
+
+.layout-split-west {
+	border-right: 0px solid transparent;
+	box-shadow: 0 0 20px gray;
+	border-radius: 0;
+	transition: box-shadow 1s ease;
+	background: #ffffff;
+}
+
+.layout-split-west:hover {
+	box-shadow: 0 0 20px blue;
+}
+
+.accordion .accordion-header {
+	height: 33px;
+	background: #3c8dbc;
+	background: #41608f;
+	transition: background 1s ease,box-shadow 1s ease;
+	border-bottom: 0px solid rgba(0,0,0,0);
+	border-left: 3px solid transparent;
+}
+
+
+/*tree背景色*/
+/*收缩效果的标题*/
+/*控制左侧tree导航收缩的title的样式*/
+.panel-header:nth-child(1) {
+    background-color: #41608f;
+    background: -webkit-linear-gradient(top,#41608f 0,#41608f 100%);
+    background: -moz-linear-gradient(top,#41608f 0,#41608f 100%);
+    background: -o-linear-gradient(top,#41608f 0,#41608f 100%);
+    background: linear-gradient(to bottom,#41608f 0,#41608f 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#41608f,endColorstr=#41608f,GradientType=0);
+}
+/*dailog title头部 start*/
+#add_info_notice .window {
+    background-color: #3f4f69;
+    background: -webkit-linear-gradient(top,#76a7c3 0,#E0ECFF 20%);
+    background: -moz-linear-gradient(top,#76a7c3 0,#E0ECFF 20%);
+    background: -o-linear-gradient(top,#76a7c3 0,#E0ECFF 20%);
+    background: linear-gradient(to bottom,#76a7c3 0,#E0ECFF 20%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#76a7c3,endColorstr=#E0ECFF,GradientType=0);
+}
+/*dailog title头部 end*/
+/*手风琴的文字控制*/
+.panel-title{
+	/*text-align: center;*/
+	color: #ffffff;
+}
+/*左侧收缩左边的样式*/
+.layout-expand {
+    background: #3c8dbc;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 10px gray;
+    transition: all 1s ease;
+}
+.layout-expand:hover {
+    box-shadow: 0 0 10px blue;
+}
+.layout-button-left {
+        background: url(../image/layout_arrows.png) no-repeat 0 0;
+}
+.layout-button-right {
+       background: url(../imgage/layout_arrows.png) no-repeat 0 -16px;
+}
+/*手风琴的最底层背景*/
+.accordion {
+	border-color: #95B8E7;
+	background: url(../images/bg01.jpg) no-repeat center center;
+	/*background: #362828;*/
+}
+
+.accordion .accordion-header-selected {
+	background: #00c0ef;
+	background: #3c8dbc;
+	border-left: 3px solid skyblue;
+}
+.accordion .accordion-header:hover {
+	background: #00c0ef;
+	background: #3c8dbc;
+	box-shadow: 0 0 20px #FFFFFF;
+	border-left: 3px solid skyblue;
+	opacity: 0.8;
+}
+/*手风琴的文字控制*/
+.accordion .accordion-header .panel-title {
+	color: #e0ecff;
+	margin-left: 10px;
+	line-height: 33px;
+	font-size: 14px;
+}
+.icon-menu{
+	color: white;
+	margin-right: 20px;
+}
+/*手风琴左边的图标*/
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion .accordion-header:hover .panel-title {
+	color: #ffffff;
+}
+
+
+
+.accordion .accordion-header-selected .panel-title {
+	color: #ffffff;
+	line-height: 33px;
+}
+.tree-title {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    padding: 0 2px;
+    height: 18px;
+    line-height: 18px;
+    color: black;
+}
+.tree-node-selected {
+    background: #aac5e7;
+    color: #000000;
+}
+.tree-node:hover {
+    background: #aac5e7;
+    color: #000000;
+}
+/**************************右側信息展示****************************************/
+/*tab的边角处理*/
+.tabs li a.tabs-inner {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    
+    border-radius: 0;
+}
+.tabs li a{
+		transition: all 1s ease;
+}
+.tabs li a:hover{
+		box-shadow: 0 0 10px deepskyblue;
+}
+/*tab内部的线性渐变设置*/
+.tabs li a.tabs-inner {
+    color: #0E2D5F;
+    background-color: transparent;
+    background: -webkit-linear-gradient(top,#ffffff 0,#ffffff 100%);
+    background: -moz-linear-gradient(top,#ffffff 0,#ffffff 100%);
+    background: -o-linear-gradient(top,#ffffff 0,#ffffff 100%);
+    
+    background: linear-gradient(to bottom,#ffffff 0,#ffffff 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff,GradientType=0);
+}
+
+
+
+/*tab下的head线性渐变设置*/
+
+.panel-header {
+    background-color: #fafafa;
+    background: -webkit-linear-gradient(top,#fafafa 0,#fafafa 100%);
+    background: -moz-linear-gradient(top,#fafafa 0,#fafafa 100%);
+    background: -o-linear-gradient(top,#fafafa 0,#fafafa 100%);
+    background: linear-gradient(to bottom,#fafafa 0,#fafafa 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fafafa,endColorstr=#fafafa,GradientType=0);
+}
+
+
+
+
+.tabs-header .tabs-pill li.tabs-selected a.tabs-inner {
+    background: #00c0ef;
+    color: #FFFFFF;
+    filter: none;
+    border-color: none;
+    box-shadow: 1px 1px 2px gray;
+}
+/*表格数据颜色*/
+.datagrid-htable, .datagrid-btable, .datagrid-ftable {
+    color: #666;
+    border-collapse: separate;
+}
+/*表格标题颜色设置*/
+.datagrid-header, .datagrid-td-rownumber {
+	border-top:1px solid #CCCCCC;
+    background-color: #00c0ef;
+    background: -webkit-linear-gradient(top,#F9F9F9 0,#efefef 100%);
+    background: -moz-linear-gradient(top,#F9F9F9 0,#efefef 100%);
+    background: -o-linear-gradient(top,#F9F9F9 0,#efefef 100%);
+    background: linear-gradient(to bottom,#fafafa 0,#fafafa 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F9F9F9,endColorstr=#efefef,GradientType=0);
+}
+
+/*隔行换色*/
+/*.datagrid-row:nth-child(even) {
+    background: #fafafa;
+}*/
+/*表格数据选中颜色*/
+.datagrid-row-selected {
+    background: #e0ecff;
+    color: #000000;
+}
+/*表格左侧*/
+.datagrid-cell-rownumber {
+    color: #666;
+}
+.datagrid-row{
+	height: 35px;
+}
+
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+    text-align: center;
+}
+.datagrid-cell .datagrid-cell-c1-listprice{
+	text-align: center !important;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit !important;
+}
+/*底部分页样式*/
+.datagrid-header, .datagrid-toolbar, .datagrid-pager, .datagrid-footer-inner {
+    border-color: #ccc;  
+}
+
+
+.datagrid-toolbar, .datagrid-pager {
+    background: #fff;
+}
+
+
+
+
+/*自定义手风琴列表*/
+
+.tree_nodes_show p{
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+	color: #FAFAFA !important;
+	cursor: pointer;
+	padding-left: 18px;
+	background: rgba(0,0,0,0);
+/*	margin-bottom: 1px;*/
+	transition: all 0.8s ease;
+}
+.tree_nodes_show p:hover{
+	color: white !important;
+	padding-left: 32px;
+	background: rgba(255,255,255,0.2);
+	color: white;
+}
+.p_notes{
+	color: white !important;
+	padding-left: 50px !important;;
+	background: rgba(255,255,255,0.2) !important;;
+	color: white !important;;
+}
+.panel-body .accordion-body{
+	padding: 0px;
+    display: block;
+    width: 100% !important;
+    /*height: 147px;*/
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+}
+.panel-header .accordion-header .accordion-header-selected{
+	height: 0;
+	padding: 0;
+}
+.notes_icons{
+	margin-right: 8px;
+}
+/*子节点的间距*/
+.tree-node {
+    height: 24px;
+}
+/*去除滚动兼容谷歌，360*/
+::-webkit-scrollbar{width:0px}
+
+.datagrid-view,.panel-body-noborder{
+	/*background: url(../img/bg02.png);*/
+	background: white;
+}
+.welcome_title{
+	display: block;
+	margin-top: 25%;
+	color: #666666;
+	font-size: 20px;
+}
+
+/*底部版权信息*/
+#footer_copright{
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	box-shadow:  0 0 10px black;
+	color: white;
+	background: #3c8dbc;
+	display: none;
+	overflow: hidden;
+/*	background: url(../img/bg05.jpg);*/
+}
+
+/*更改小箭头*/
+.accordion-collapse {
+    background: url(../images/accordion_arrows02.png) no-repeat 0 0;
+}
+.accordion-expand {
+    background: url(../imges/accordion_arrows02.png) no-repeat -16px 0;
+}
+
+
+
+/*样式切换模块的css样式控制*/
+.style_change{
+	padding:20px;
+	display:none;
+	background: #41608f;
+}
+.style_box{
+	width:100%;
+	height:100%;
+	border: none !important;
+}
+
+.settings_mystyle{
+	background: #41608f;
+}
+
+
+
+/*dailog 底部按钮控制 start*/
+.dialog-button {
+    border-color: #dddddd #95B8E7 #95B8E7 #95B8E7;
+    text-align: center;
+}
+/*dailog 底部按钮控制 end*/
+
+
